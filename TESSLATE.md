@@ -44,10 +44,10 @@ backend/
 chown -R node:node /app
 
 # Backend
-cd backend && pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8001 --reload &
+cd /app/backend && pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8001 --reload &
 
 # Frontend
-cd frontend && npm install && npm run dev -- --host 0.0.0.0 --port 5173
+cd /app/frontend && npm install && npm run dev -- --host 0.0.0.0 --port 5173
 ```
 
 **Production Build**:
