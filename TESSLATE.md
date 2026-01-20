@@ -41,7 +41,7 @@ backend/
 ```bash
 
 # permisssions
-chown -R node:node /app
+sudo chown -R node:node /app
 
 # Backend
 cd /app/backend && pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8001 --reload &
